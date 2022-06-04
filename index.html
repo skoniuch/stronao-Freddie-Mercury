@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Freddie Mercury</title>
+</head>
+<body>
+    <div id="top">
+        <img src="icon.png" alt="Freddie">
+        <h2><i><b style="font-size: 60px;">Freddie Mercury</b></i></h2>
+        <h1 style="float: right;"><a href="#galeria">GALERIA</a></h1>
+        <h1 style="float: right;"><a href="#hity">HITY</a></h1>
+        <h1 style="float: right;"><a href="#my">O MNIE</a></h1>
+    </div>
+    <div id="my">
+    <a id="my">
+        <p><h1><b>FREDDIE MERCURY</b></h1></p><br></a>
+        <img src="7.jpg" alt="my">
+        <p><b>Freddie Mercury (prawdziwe nazwisko Farrokh Bulsara) urodził się w Zanzibarze 5 września 1946 roku. Ukończył szkołę Świętego Piotra w pobliżu Bombaju (Indie). Tam nauczył się grać na pianinie i założył swój pierwszy zespół. Następnym etapem jego edukacji było Liceum im. Świętej Marii w Mazagonie (Indie). Po jego ukończeniu powrócił do Zanzibaru.</b></p><br>
+        <p>W wieku 17 lat przeprowadził się do Anglii. Głównym powodem jego wyjazdu była Rewolucja Zanzibarska w 1964 roku. W Londynie pobierał nauki w Ealing Art College, który ukończył w klasie sztuki i projektowania graficznego (dyplom w tej samej dziedzinie uzyskał również lider The Who, Pete Townshend). Nabyte tam umiejętności wykorzystał później projektując logo grupy Queen, zespołu, z którym zrobił ogromną karierę. Jest autorem takich jego przebojów, jak "Bohemian Rhapsody", "Killer Queen", "Somebody to Love", "Don't Stop Me Now", "We Are the Champions", czy "Crazy Little Thing Called Love".</p><br>
+        <p>Solo zadebiutował singlem "I Can Hear Music", który ukazał się pod pseudonimem Larry Lurex w 1973 roku. Piosenka jest przeróbką utworu grupy The Beach Boys.</p><br>
+        <p>W 1974 roku Mercury przyznał się w wywiadzie dla "New Musical Express", że jest homoseksualistą, choć był wówczas w związku z Mary Austin.</p><br>
+        <p>Pierwsza solowa płyta Mercury'ego, "Mr. Bad Guy", ukazała się w 1985 roku. Na album trafiło 11 kompozycji, utrzymanych w różnych stylistykach – od hard rocka, przez pop, disco, aż po piosenki wykonywane jedynie przy akompaniamencie pianina. Na kolejny album sygnowany nazwiskiem wokalisty przyszło fanom czekać trzy lata. "Barcelona", bo taki właśnie nosi tytuł, nie odniosła spodziewanego sukcesu komercyjnego. Sprawiła jednak, że spełniło się jedno z największych marzeń artysty – zaśpiewał w duecie z wokalistką operową Montserrat Caballé.</p><br>
+        <p>W 1987 roku u artysty zdiagnozowano AIDS. Ostatni raz wokalista pojawił się publicznie na planie teledysku "These Are The Days Of Our Lives", w maju 1991 roku. 23 listopada tego samego roku, po konsultacji z menedżerem Jimem Beachem, Mercury wydał oficjalne oświadczenie, w którym potwierdził spekulacje o swojej chorobie. 24 godziny później zmarł. Istnieją przypuszczenia, że jego prochy zostały rozrzucone nad Jeziorem Genewskim, choć informacja ta nie została potwierdzona przez jego bliskich.</p><br>
+        <p>Muzycy Queen zorganizowali specjalny koncert na cześć zmarłego kolegi. The Freddie Mercury Tribute Concert miał miejsce 20 kwietnia 1992 roku na stadionie Wembley. Zysk ze sprzedaży biletów został przekazany na rzecz walki z AIDS. Utwory Queen zagrały takie zespoły jak: Metallica, Extreme, Def Leppard, Guns N' Roses. W drugiej części koncertu wystąpili muzycy Queen w towarzystwie takich wokalistów i wokalistek, jak: Roger Daltrey, Tony Iommi, James Hetfield, Elton John, George Michael, Seal, David Bowie, Robert Plant, Axl Rose, Liza Minnelli.</p><br>
+    <br><br><br>
+    </div>
+
+    <div id="panel">
+        <div id="title">
+            <h1>Kontakt</h1>
+        </div>
+        <div id="dane">
+            <form action="code.php" method="post">
+                Podaj swoje dane kontaktowe:<br>
+                Twoje imię: 
+                <input type="text" name='imię'><br>
+                Twoje nazwisko
+                <input type="text" name='nazwisko'><br>
+                Twój e-mail: 
+                <input type="email" name='mail'><br>
+                Twój nr.tel:
+                <input type="tel" name='tel'><br>
+                Napisz swoją wiadomość:
+                <input type="text" name='wiadomość'>
+                <input type="reset" value="WYCZYŚĆ">
+                <input type="submit" value="WYŚLIJ"><br>
+            </form>
+        </div>    
+    </div>
+    <a id="galeria">
+    <p style="color: #fff; text-align: center; font-size: 60px;"><b>GALERIA</b></p><br></a>
+    <main class="slider">
+        <section class="slider__container">
+            <button class="slider__button slider__button--prev" data-button-prev></button>
+            <figure class="slide" data-slide></figure>
+            <button class="slider__button slider__button--next" data-button-next></button>
+        </section>
+    </main>
+    <script src="index.js"></script>
+    <script>
+        const imageArr = [
+            '1.jpg',
+            '2.jpg',
+            '3.jpg',
+            '4.jpg',
+            '5.jpg',
+            '6.jpg',
+            '7.jpg',
+            '8.jpg',
+        ]
+        const slider = new Slider(imageArr);
+        slider.initializeSlider();
+    </script>
+    <br><br><br><br>
+    <a id="hity">
+    <p style="text-align: center;"><b style="color:#fff; font-size: 60px;">HITY</b></p></a>  
+    <div id="hity">
+            <iframe width="670" height="506" src="https://www.youtube.com/embed/mPbclTnMLlc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="670" height="506" src="https://www.youtube.com/embed/v3xwCkhmies" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="670" height="506" src="https://www.youtube.com/embed/o-0ygW-B_gI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="670" height="506" src="https://www.youtube.com/embed/vbvyNnw8Qjg?list=RDv3xwCkhmies" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+</body>
+</html>
